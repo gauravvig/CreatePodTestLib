@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CreatePodTestLib"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of CreatePodTestLib."
 
   # This description is used to generate tags and improve search results.
@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
   # spec.libraries = "iconv", "xml2"
 
   spec.dependency "AmazonIVSPlayer"
-  # spec.dependency "GoogleAds-IMA-iOS-SDK"
+  spec.dependency "GoogleAds-IMA-iOS-SDK"
 
   spec.subspec 'Legacy' do |ss|
 
