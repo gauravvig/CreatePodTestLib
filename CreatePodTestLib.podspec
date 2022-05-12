@@ -122,6 +122,9 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
+  spec.dependency "AmazonIVSPlayer"
+  spec.dependency "GoogleAds-IMA-iOS-SDK"
+
   spec.subspec 'Legacy' do |ss|
 
        ss.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e', 'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64 arm64e'}
@@ -132,8 +135,7 @@ Pod::Spec.new do |spec|
 
   end
   
-  spec.dependency "AmazonIVSPlayer"
-  spec.dependency "GoogleAds-IMA-iOS-SDK"
+
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
