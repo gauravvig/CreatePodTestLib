@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
   # spec.libraries = "iconv", "xml2"
 
   spec.dependency "AmazonIVSPlayer"
-  spec.dependency "GoogleAds-IMA-iOS-SDK"
+  # spec.dependency "GoogleAds-IMA-iOS-SDK"
 
   spec.subspec 'Legacy' do |ss|
 
