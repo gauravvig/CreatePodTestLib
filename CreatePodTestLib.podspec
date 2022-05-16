@@ -122,13 +122,13 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-  spec.dependency "AmazonIVSPlayer"
-  spec.dependency "GoogleAds-IMA-iOS-SDK"
+  spec.dependency 'AmazonIVSPlayer', '1.8.2'
+  spec.dependency 'GoogleAds-IMA-iOS-SDK', '3.16.3'
 
   spec.subspec 'Legacy' do |ss|
 
-       ss.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e', 'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64 arm64e'}
-       ss.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e', 'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64 arm64e'}
+       ss.pod_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e'}
+       ss.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 arm64e'}
 
        ss.ios.preserve_paths = 'framework/TestFramework.framework'
        ss.ios.vendored_frameworks = 'framework/TestFramework.framework'
